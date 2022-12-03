@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.nav-bg{
+    background-color: rgb(118, 118, 255);
+}
+.nav-bar:hover{
+    color: white;
+}
+.h-text{
+    color: #6059F6;
+}
+.h-btn{
+    display: inline-block;
+    background-color: #6059f6;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 25px;
+    transition: all .3s ease 0s;
+    border: none;
+}
+.h-btn:hover{
+    background-color: #201AA3;
+}
+.services-card{
+    padding: 20px 10px;
+    background-color: #d3d0ff75;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+.services-card:hover{
+    background:none;
+}
+.card-img{
+    width: 100%;
+}
+.tour-card{
+    position: relative;
+    cursor: pointer;
+}
+.tour-content{
+    position:absolute;
+    padding: 8px 20px 25px 15px;
+    bottom:0px;
+    border-radius: 5px;
+    background-color: white;
+    transition: all .3s linear 0.2s;
+}
+.tour-display{
+    display: none;
+}
+.tour-card:hover .tour-display{
+    display: block;
+}
+.blog{
+    background-color: #F8F8FF;
+}
+.blog-card{
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.blog-card:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.icon{
+    font-size: 50px;
+}
+.img-transition{
+    transition: all 0.3s ease-in-out 0.1s;
+    cursor: pointer;
+}
+.img-transition:hover{
+    transform: scale(1.15);
+}
+footer{
+    background-color: #F8F8FF;
+}
+@media (min-width: 600px){
+    .h-btn {
+        padding: 12px 45px;
+    }
+}
+@media (min-width: 320px) and (max-width:480px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+  .f-text{
+    order: 1;
+    margin-top: 10px;
+    font-size: 10px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+}
+@media (min-width: 481px) and (max-width:768px){
+  .contact{
+     display: flex;
+     flex-direction: row;
+  }
+  .footer{
+      display: flex;
+      flex-direction: column;
+  }
+  .f-text{
+    order: 1;
+    margin-top: 10px;
+    }
+}
+@media (min-width: 769px) and (max-width:1024px){
+  .contact{
+     display: flex;
+     justify-content: space-between;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+    .f-text{
+        order: 1;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+@media (min-width: 1025px){
+
+    .f-text{
+       
+        font-size: 25px;
+    }
+}
+
